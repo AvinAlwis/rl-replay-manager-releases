@@ -12,6 +12,7 @@ A desktop application for organising, browsing, and analysing your Rocket League
 
 - **Automatic scanning** — finds all `.replay` files in your Steam and/or Epic Games replay folders on startup
 - **Card-based browser** — every replay shows its map, score, date, duration, and match type at a glance
+- **Card title** — choose whether each card displays the replay's filename or its in-game replay name (configurable in Settings)
 - **Live search and filters** — narrow your library instantly by:
   - Text (map name, player name)
   - Map
@@ -113,14 +114,36 @@ The **Edit In-Game Name** action writes a new name directly into the replay file
 
 ### Themes
 
-Four built-in themes, switchable live with a preview before you confirm:
+Four built-in themes plus a fully customizable option, all switchable live with an instant preview before you confirm:
 
 | Theme | Description |
 |-------|-------------|
 | **Dark** | Default dark grey |
-| **Dark Purple** | Dark with purple accents |
+| **Dark Purple** | Dark with electric violet accents |
 | **Midnight** | Deep blue-black |
 | **Slate** | Cool blue-grey |
+| **Custom** | Fully customizable — pick any colors you like |
+
+#### Custom Theme
+
+Select **Custom** in the theme dropdown to reveal a color picker panel with seven editable color slots:
+
+| Slot | What it affects |
+|------|----------------|
+| **Background** | Main window background |
+| **Surface** | Input fields and list backgrounds |
+| **Text** | Primary text |
+| **Accent** | Highlights, active buttons, badges, and links |
+| **Button** | Standard button backgrounds |
+| **Border** | Panel and input borders |
+| **Card** | Replay card background |
+
+- Colors apply **live as you pick** — the whole app updates in real time while the color picker is open
+- Click **Save as…** to give your color set a name and add it to the theme dropdown as a saved theme
+- Saved themes appear alongside the built-in themes in the dropdown; switching to one loads its colors instantly
+- Selecting a saved theme still shows the color picker panel so you can continue tweaking
+- **Delete theme** removes a saved theme — built-in themes (Dark, Dark Purple, Midnight, Slate) cannot be deleted
+- **Reset to defaults** returns all seven slots to the Custom theme baseline colors
 
 ---
 
@@ -152,6 +175,17 @@ Download the community item database (~2 MB) from Settings so car loadouts show 
 1. Download `RLReplayManagerSetup.exe` from the **[Releases](../../releases/latest)** tab
 2. Run the installer — no Python or additional dependencies required
 3. On first launch, open **Settings** from the toolbar to configure your replay folder and optional ballchasing.com API key
+
+---
+
+## First Launch
+
+Open **Settings** from the toolbar after installing:
+
+1. **Replay folder** — the app will attempt to auto-detect your Steam and Epic replay folders; set it manually if needed
+2. **Card title** — choose whether cards show the filename or the in-game replay name
+3. **ballchasing API key** — paste your key to enable upload and sync features (get one at [ballchasing.com/upload](https://ballchasing.com/upload))
+4. **Item Names Database** — click **Download Item Names** for human-readable loadout display in the player info panel
 
 ---
 
